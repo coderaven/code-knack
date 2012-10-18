@@ -1,0 +1,444 @@
+/*** Color Scheme
+Cool Blue  -  #3763a2
+Dark Blue  -  #293e6b
+Light Blue -  #cbe0f0
+Cream Gray -  #f4f4f4
+***/
+
+/*** Fonts ***/
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'), url('fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans Light';
+    src: local('Open Sans Light'), url('fonts/OpenSans-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: local('Open Sans Bold'), url('fonts/OpenSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans Semibold';
+    src: local('Open Sans Semibold'), url('fonts/OpenSans-Semibold.ttf') format('truetype');
+    font-weight: 150;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans Extrabold';
+    src: local('Open Sans Extrabold'), url('fonts/OpenSans-ExtraBold.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* Margin and padding reset*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,p {
+	font-family: 'Open Sans', Georgia, sans-serif;
+}
+
+/** End CSS Reset ***/
+
+a {
+	color: #3763a2;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #293e6b;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background: #f4f4f4;
+	height: 100%;
+}
+
+div#head-strip {
+	background: #3763a2 url('../img/head-strip-bg.png');
+	margin-bottom: -35px;
+}
+
+div#head-wrap {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto 35px auto;
+	clear: both;
+}
+
+div#logo {
+	float: left;
+	padding: 5px;
+}
+
+nav#head-nav {
+	padding: 5px;
+	z-index: 9999;
+}
+
+#head-wrap select {
+	padding: 5px;
+	float: right;
+}
+
+nav#head-nav ul {
+	display: inline-block;
+}
+
+nav#head-nav ul li {
+	display: inline-block;
+}
+
+nav#head-nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 10px 5px 10px;
+	font-family: 'Open Sans Bold', Georgia, sans-serif;
+	font-weight: bold;
+	font-size: 17.27px;
+	/*line-height: 2;*/
+
+	transition: all;
+	transition-duration: 0.5s;
+	-moz-transition: all;
+	-moz-transition-duration: 0.5s;
+	-webkit-transition: all;
+	-webkit-transition-duration: 0.5s;
+}
+
+nav#head-nav ul li a:hover {
+	background: #293e6b;
+}
+
+div#wrap {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	min-height: 100%;
+	background: #fff;
+	box-shadow: 0px 2px 5px #000; /** 0px 20px 20px #ccc **/
+}
+
+div#head-slider {
+	margin-top: 45px; /*** Margin for slider to nav-bar **/
+}
+
+div#mid-about {
+	width: 100%;
+	max-width: 960px;
+	padding: 10px;
+	clear: both;
+}
+
+div#mid-about #img-box {
+	width: 95%;
+	max-width: 200px;
+	background: url('../img/codeknack-box.png') no-repeat center bottom;
+	height: 100px;
+	float: left;
+}
+
+div#what-box {
+	width: 95%;
+	max-width: 700px;
+	float: left;
+	margin-bottom: 100px;
+}
+
+div#what-box h2 {
+	font-size: 30px;
+	font-family: 'Open Sans Semibold', Georgia, sans-serif;
+	font-weight: 150;
+	color: #293e6b;
+}
+
+div#what-box p {
+	font-family: 'Open Sans Light', Georgia, sans-serif;
+	font-weight: lighter;
+}
+
+div#what-box h2,
+div#what-box p,
+div#what-box a {
+	padding-bottom: 10px;
+}
+
+div#update-box {
+	clear: both;
+	height: 300px;
+	border-top: solid 2px #ccc;
+	border-bottom: solid 2px #ccc;
+	width: 100%;
+	max-width: 930px;
+	margin: 0px auto 50px auto;
+}
+
+div.update-column {
+	width: 300px;
+	height: 300px;
+	border-right: solid 2px #ccc;
+	float: left;
+}
+
+.no-border {
+	border: none !important;
+}
+
+div#lchallenges {
+	width: inherit;
+	padding: 10px;
+}
+
+div#lchallenges ul li {
+	padding: 7px;
+	list-style-type: none;
+}
+
+div#lchallenges ul li p {
+	font-size: 12px;	
+}
+
+div#lchallenges > a {
+	padding: 7px;
+}
+
+div#rtutorials {
+	width: inherit;
+	padding: 10px;
+}
+
+div#ucontests {
+	width: inherit;
+	padding: 10px;
+}
+
+div#ucontests img {
+	padding-top: 15px;
+}
+
+div#ucontests p {
+	font-size: 12px;
+	margin-bottom: 7px;
+}
+
+footer {
+	clear: both;
+	background: #293e6b;
+	height: 30px;
+	width: 100%;
+	max-width: 960px;
+	margin: auto;
+}
+
+footer p {
+	color: #fff;
+	margin-top: 5px;
+	margin-left: 5px;
+	float: left;
+}
+
+footer ul {
+	float: right;
+}
+
+footer ul li {
+	display: inline-block;
+	margin-top: 5px;
+}
+
+footer ul li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 0px 10px;
+}
+
+footer ul li a:hover {
+	color: #cbe0f0;
+	text-decoration: underline;
+}
+
+/*** Problem Page ***/
+
+#fbcomments, .fb-comments, .fb-comments iframe[style], .fb-comments span, .fb-like, .fb-like span {
+	width: 100% !important;
+}
+
+div#problem {
+	padding: 30px;  
+}
+
+div#spec {
+	margin-bottom: 50px;
+}
+
+.code-pad{
+	margin-bottom: 200px;
+}
+
+.editor-wrapper {
+    height: 275px;
+    position: relative;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    border-bottom-right-radius: 0px;
+    margin-top: 5px;
+}
+
+#editor{
+    left: 0px;
+    top: 0px;
+    bottom: 1px;
+    right: 1px;
+    background: #fff;
+}
+
+.loading {
+    background: url('../img/ajax-loader.gif') no-repeat;
+    line-height: 30px;
+    padding: 0 0 0 35px;
+}
+
+
+#response {
+    margin: 20px 0 0 0;
+    border: 2px solid #3763a2;
+    padding: 10px;
+    display: none;
+}
+
+.meta {
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding: 0 0 10px;
+}
+
+.output, pre {
+    font-size: 13px;
+    font-family: 'Open Sans', Georgia, sans-serif;
+}
+
+.output {
+    overflow: auto;
+    max-height: 500px;
+}
+
+.cmpinfo {
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding: 0 0 10px;
+}
+
+.result {
+	margin-top: 20px;
+	color: #fff;
+}
+
+.result b {
+	display: block;
+	padding: 5px;
+}
+
+.correct-solution {
+	color: #000;
+	background: #B6F6BA;
+}
+
+.partial-solution {
+	background: orange;
+}
+
+.wrong-solution {
+	background: red;
+}
+/****/
+
+/***** Tutorials page *****/
+
+div#tutorial {
+	width: 100%;
+	max-width: 550px;
+	padding: 20px;
+	margin: auto;
+}
+
+div#tutorial-header {
+	padding: 30px;
+}
+
+div#tutorial-header h2{
+	float: left;
+}
+
+div#tutorial-header p {
+	width: 100%;
+	max-width: 300px;
+	float: right;
+}
+
+
+div#tutorial-list {
+	width: 100%;
+	max-width: 960px;
+	margin-top: 60px; 
+}
+
+div.tut {
+	clear: both;
+	width: 100%;
+	max-width: 700px;
+	border-top: solid 1px #888;
+	margin: auto;
+	padding: 10px;
+}
+
+div.left-tut {
+	float: left;
+	width: 500px;
+}
+
+div.right-tut {
+	float: left;
+	width: 200px;
+	overflow: hidden;
+}
+
+div.right-tut img{
+	width: 200px;
+}
+
+/*****/
+
+
+/***** Simple Slider *****/
+
+#small-slide {width:280px;overflow:hidden;position:relative;height:220px;margin-bottom:20px}
+#small-slide .cover{
+	width:840px; /*------- class small-stuff width * number of small-stuff divs (160 * 3 = 480)---------- */
+	position: absolute;
+	height:220px;
+}
+
+#small-slide .small-stuff {width:280px;float:left;padding:20px 0;font-size: 12px;}
+#button {margin-left: 120px;}
+.button1,.button2,.button3{background:#cbe0f0;padding:6px;display:block;float:left;margin-right:5px;border-radius: 10px;}
+.active{background:#3763a2;padding:6px;display:block;float:left;outline:none;}
+.clear{clear:both;}
+
+/*****/

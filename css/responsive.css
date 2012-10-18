@@ -1,0 +1,41 @@
+nav#head-nav select {
+  /*display: none; /*= Force dropdown navigation to hide on desktop = */
+}
+
+
+@media screen and (max-width:960px) {
+
+  #img-box  { display: none; }
+}
+
+@media screen and (max-width:800px) {
+
+
+}
+
+@media screen and (max-width:650px) {
+
+	div#head-slider { display: none; }
+    div.update-column { width: 100%;}
+}
+
+@media screen and (max-width:600px) {
+
+	nav#head-nav ul li{ 
+		width: 100%; 
+		padding: 10px;
+		border-top: 1px solid #000;
+		text-align: center;
+	}
+	nav#head-nav ul li a{ 
+		width: 100%; 
+	}
+	div#head-strip {
+		background: #3763a2;
+	}
+
+	#logo {
+		width: 200px;
+	}
+
+}
